@@ -1,0 +1,947 @@
+@media (min-width: 1px) {
+  h1 {
+    font-size: 2.8rem !important;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .my-image2{
+    max-width: 40% !important;
+  }
+
+  h3{
+    font-size: 0.82rem !important;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    margin-left: 0.2rem;
+  }
+
+  .mission{
+    margin-top: 2rem;
+    margin-left: 0.2rem;
+    font-size: 0.75rem;
+  }
+
+  .sectionTitle{
+    font-weight: 400;
+    font-size: 2.5rem !important;
+  }
+
+  .sectionText{
+    font-weight: normal;
+    margin-top: 2%;
+    font-size: 1rem;
+  }
+
+  .sectionSpace{
+    margin-top: 25%;
+    margin-bottom: 25%;
+  }
+
+  .sectionSpacex2{
+    padding-top: 25%;
+    padding-bottom: 25%;
+  }
+
+  .resumeTitle{
+    font-weight: 400;
+    font-size: 1.75rem;
+  }
+
+  .extraSpace{
+    margin-top: 3%;
+  }
+
+  pre{
+    color: #FFB703;
+    font-family: "Raleway", sans-serif;
+    white-space: pre-wrap;
+    font-size: 0.85rem;
+    margin-top: 2%;
+  }
+
+  .firstPre{
+    margin: 0;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+
+  .previousP{
+    margin-bottom: 7.5% !important;
+  }
+
+  h4{
+    text-transform: uppercase !important;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .resume-item h4::first-line {
+    line-height: 1; /* Imposta la line-height solo per la prima riga */
+  }
+
+  .social-icon {
+    width: 42px;
+    height: 42px;
+    background-color: #FFB703;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .social-icon{
+    width: 25.2px;
+    height: 25.2px;
+    background-color: #FFB703;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer img{
+    height: 25.2px;
+  }
+
+  .contatti p{
+    margin-left: 4% !important;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #F4F4F4;
+    font-size: 1rem;
+  }
+
+  .dividerFooter{
+    border-top: 1px solid #F4F4F4;
+    margin-bottom: 10%;
+  }
+
+  .footerMargin{
+    margin-top: 6%;
+    margin-bottom: 2.5%;
+  }
+
+  .section-footer{
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+
+  small{
+    font-size: 0.75rem;
+  }
+
+  .contatti-footer .col-3{
+    width: 36.29px !important;
+  }
+}
+
+@media (min-width: 577px) {
+  h1 {
+    font-size: 5.5rem !important;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .my-image2{
+    max-width: 36% !important;
+  }
+
+  h3{
+    font-size: 1.6rem !important;
+    margin-top: 1rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+
+  .mission{
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .sectionTitle{
+    font-weight: 400;
+    font-size: 2.75rem !important;
+  }
+
+  .sectionText{
+    font-weight: normal;
+    margin-top: 2%;
+    font-size: 0.94rem;
+  }
+
+  .sectionSpace{
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .sectionSpacex2{
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+
+  .resumeTitle{
+    font-weight: 400;
+    font-size: 1.75rem;
+  }
+
+  pre{
+    color: #FFB703;
+    font-family: "Raleway", sans-serif;
+    white-space: pre-wrap;
+    font-size: 0.75rem;
+    margin-top: 2%;
+  }
+
+  p{
+    font-size: 0.94rem;
+  }
+
+  .previousP{
+    margin-bottom: 7.5% !important;
+  }
+
+  h4{
+    text-transform: uppercase !important;
+    font-size: 1.04rem;
+    font-weight: 400;
+  }
+
+  .social-icon {
+    width: 42px;
+    height: 42px;
+    background-color: #FFB703;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .social-icon{
+    width: 25.2px;
+    height: 25.2px;
+    background-color: #FFB703;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer img{
+    height: 25.2px;
+  }
+
+  .contatti p{
+    margin-left: 4% !important;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #F4F4F4;
+    font-size: 0.94rem;
+  }
+
+  .dividerFooter{
+    border-top: 1px solid #F4F4F4;
+    margin-bottom: 6%;
+  }
+
+  .footerMargin{
+    margin-top: 6%;
+    margin-bottom: 1.5%;
+  }
+
+  .section-footer{
+    font-size: 0.94rem;
+    margin-bottom: 5%;
+  }
+
+  small{
+    font-size: 0.75rem;
+  }
+
+  .contatti-footer .col-3{
+    width: 36.29px !important;
+  }
+}
+
+@media (min-width: 769px) {
+  h1 {
+    font-size: 6rem !important;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .my-image2{
+    max-width: 35% !important;
+  }
+
+  h3{
+    font-size: 1.75rem !important;
+    margin-top: 1rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+
+  .mission{
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .sectionTitle{
+    font-weight: 400;
+    font-size: 3rem !important;
+  }
+
+  .sectionText{
+    font-weight: normal;
+    margin-top: 2%;
+    font-size: 1.02rem;
+  }
+
+  .sectionSpace{
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .sectionSpacex2{
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+
+  .resumeTitle{
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  pre{
+    color: #FFB703;
+    font-family: "Raleway", sans-serif;
+    white-space: pre-wrap;
+    font-size: 0.85rem;
+    margin-top: 2%;
+  }
+
+  p{
+    font-size: 1.02rem;
+  }
+
+  .previousP{
+    margin-bottom: 7.5% !important;
+  }
+
+  h4{
+    text-transform: uppercase !important;
+    font-size: 1.12rem;
+    font-weight: 400;
+  }
+
+  .social-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #FFB703;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .social-icon{
+    width: 27px;
+    height: 27px;
+    background-color: #FFB703;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer img{
+    height: 27px;
+  }
+
+  .contatti p{
+    margin-left: 4% !important;
+  }
+
+  .dividerFooter{
+    border-top: 1px solid #F4F4F4;
+    margin-bottom: 5%;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #F4F4F4;
+    font-size: 1.02rem;
+  }
+
+  .section-footer{
+    font-size: 1.02rem;
+    margin-bottom: 5%;
+  }
+
+  small{
+    font-size: 0.75rem;
+  }
+
+  .contatti-footer .col-3{
+    width: 38.88px !important;
+  }
+}
+
+@media (min-width: 993px) {
+  h1 {
+    font-size: 7.5rem !important;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .my-image2{
+    max-width: 35% !important;
+  }
+
+  h3{
+    font-size: 2.20rem !important;
+    margin-top: 1rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+
+  .mission{
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .sectionTitle{
+    font-weight: 400;
+    font-size: 3.75rem !important;
+  }
+
+  .sectionText{
+    font-weight: normal;
+    margin-top: 2%;
+    font-size: 1.28rem;
+  }
+
+  .sectionSpace{
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .sectionSpacex2{
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+
+  .resumeTitle{
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+
+  .extraSpace{
+    margin-top: 0%;
+  }
+
+  pre{
+    color: #FFB703;
+    font-family: "Raleway", sans-serif;
+    white-space: pre-wrap;
+    font-size: 1.03rem;
+    margin-top: 2%;
+  }
+
+  p{
+    font-size: 1.28rem;
+  }
+
+  .previousP{
+    margin-bottom: 7.5% !important;
+  }
+
+  h4{
+    text-transform: uppercase !important;
+    font-size: 1.38rem;
+    font-weight: 400;
+  }
+
+  .resume-item h4::first-line {
+    line-height: 0.9; /* Imposta la line-height solo per la prima riga */
+  }
+
+  .social-icon {
+    width: 56px;
+    height: 56px;
+    background-color: #FFB703;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .social-icon{
+    width: 33.6px;
+    height: 33.6px;
+    background-color: #FFB703;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer img{
+    height: 33.6px;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #F4F4F4;
+    font-size: 1.28rem;
+  }
+
+  .section-footer{
+    font-size: 1.28rem;
+    margin-bottom: 5%;
+  }
+
+  small{
+    font-size: 0.85rem;
+  }
+
+  .contatti-footer .col-3{
+    width: 48.38px !important;
+  }
+
+  .dividerFooter{
+    border-top: 1px solid #F4F4F4;
+    margin-bottom: 4%;
+  }
+}
+
+@media (min-width: 1201px) {
+  h1 {
+    font-size: 6rem !important;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  h3{
+    margin-top: 1rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    font-size: 1.75rem !important;
+  }
+
+  .mission{
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .sectionTitle{
+    font-weight: 400;
+    font-size: 3rem !important;
+  }
+
+  .sectionText{
+    font-weight: normal;
+    margin-top: 2%;
+    font-size: 1.02rem;
+  }
+
+  .sectionSpace{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .sectionSpacex2{
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .resumeTitle{
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  pre{
+    color: #FFB703;
+    font-family: "Raleway", sans-serif;
+    white-space: pre-wrap;
+    font-size: 0.90rem;
+    margin-top: 2%;
+  }
+
+  p{
+    font-size: 1.02rem;
+  }
+
+  .previousP{
+    margin-bottom: 7.5% !important;
+  }
+
+  h4{
+    text-transform: uppercase !important;
+    font-size: 1.12rem;
+    font-weight: 400;
+  }
+
+  .social-icon {
+    width: 48px;
+    height: 48px;
+    background-color: #FFB703;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .social-icon{
+    width: 28.8px;
+    height: 28.8px;
+    background-color: #FFB703;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer img{
+    height: 28.8px;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #F4F4F4;
+    font-size: 1.02rem;
+  }
+
+  .section-footer{
+    font-size: 1.02rem;
+    margin-bottom: 5%;
+  }
+
+  small{
+    font-size: 0.8rem;
+  }
+
+  .contatti-footer .col-3{
+    width: 41.47px !important;
+  }
+
+  .dividerFooter{
+    border-top: 1px solid #F4F4F4;
+    margin-bottom: 3%;
+  }
+}
+
+@media (min-width: 2000px) {
+  h1 {
+    font-size: 10rem !important;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  h3{
+    font-size: 2.95rem !important;
+    margin-top: 1.75rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+
+  .mission{
+    margin-top: 4.5rem;
+    margin-left: 0.5rem;
+    font-size: 2.05rem;
+  }
+
+  .sectionTitle{
+    font-weight: 400;
+    font-size: 5rem !important;
+  }
+
+  .sectionText{
+    font-weight: normal;
+    margin-top: 2%;
+    font-size: 1.75rem;
+  }
+
+  .sectionSpace{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .sectionSpacex2{
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .resumeTitle{
+    font-weight: 400;
+    font-size: 2.75rem;
+  }
+
+  pre{
+    color: #FFB703;
+    font-family: "Raleway", sans-serif;
+    white-space: pre-wrap;
+    font-size: 1.5rem;
+    margin-top: 2%;
+  }
+
+  p{
+    font-size: 1.75rem;
+  }
+
+  .previousP{
+    margin-bottom: 7.5% !important;
+  }
+
+  h4{
+    text-transform: uppercase !important;
+    font-size: 1.85rem;
+    font-weight: 400;
+  }
+
+  .resume-item h4::first-line {
+    line-height: 0.7; /* Imposta la line-height solo per la prima riga */
+  }
+
+  .social-icon {
+    width: 75px;
+    height: 75px;
+    background-color: #FFB703;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .social-icon{
+    width: 45px;
+    height: 45px;
+    background-color: #FFB703;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer img{
+    height: 45px;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #F4F4F4;
+    font-size: 1.75rem;
+  }
+
+  .section-footer{
+    font-size: 1.75rem;
+    margin-bottom: 5%;
+  }
+
+  small{
+    font-size: 1.05rem;
+  }
+
+  .contatti-footer .col-3{
+    width: 65px !important;
+  }
+}
+
+@media screen and (max-height: 900px) and (orientation: landscape) {
+  .my-image2{
+    display: none;
+  }
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #191919 !important;
+  color: #F4F4F4;
+}
+
+.top{
+  background-color: #FFB703;
+  color: #191919;
+}
+  
+/* Personalizzazione del toggle button */
+.navbar-toggler {
+  border: none; /* Rimuovi il contorno */
+  outline: none; /* Rimuovi l'outline */
+}
+
+.navbar-toggler:focus {
+  box-shadow: none; /* Rimuovi il box-shadow al focus */
+}
+
+.navbar-toggler-icon {
+  color: #191919; /* Colore dell'icona del toggle button */
+}
+
+.firstSection {
+  height: 93vh;
+}
+
+.topAlignment{
+  display: flex !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+}
+
+.rowSmall {
+  margin-left: 1.2%;
+  margin-right: 1.2%;
+}
+
+#rowSmallSecond{
+  margin-top: 4%;
+}
+
+.my-image {
+  position: relative;
+}
+
+.my-image img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 80%;
+}
+
+.section img {
+  max-width: 32%;
+  height: auto;
+}
+
+.space{
+  margin-top: 0.6%;
+  margin-bottom: 0.6%;
+  margin-left: 1.2%;
+  margin-right: 1.2%;
+}
+
+.textYellow{
+  color: #FFB703;
+}
+
+.spaceCV{
+  margin-top: 10%;
+  padding-right: 5%;
+}
+
+.resumeTitle{
+  margin-bottom: 7.5%;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #F4F4F4;
+  position: relative;
+  margin-left: 1%;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #FFB703;
+  border: 2px solid #FFB703;
+}
+
+.btnStyle{
+  background-color: #FFB703 !important;
+  color: #191919 !important;
+  border-color: #FFB703;
+  height: max-content;
+  height: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.btnStyle:hover{
+  background-color: #a57600 !important;
+  color: #191919 !important;
+  border-color: #a57600;
+}
+
+.linkOnYellow{
+  color: #191919;
+}
+
+.social-icon img{
+  max-width: 50%;
+}
+
+.social-icon:hover{
+  background-color: #a57600 !important;
+}
+
+.contatti{
+  margin-top: 3%;
+}
+
+.contatti p{
+  margin-left: 3%;
+}
+
+.contatti div{
+  margin-top: 2%;
+}
+
+.mission{
+  min-height: 10rem;
+}
+
+.rowDivider{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.footerMargin .col-1{
+  padding-left: 0 !important;
+}
+
+.colFooterSm{
+  padding-right: 0 !important;
+}
+
+nav a:hover{
+  text-decoration: underline !important;
+}
+
+.nav-footer:hover{
+  text-decoration: underline !important;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

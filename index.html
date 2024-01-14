@@ -1,383 +1,548 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <head>
 
-  <title>Gianluca Rossi</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gianluca Rossi - UX R&D</title>
 
-  <!-- Favicons -->
-  <link href="assets/img/fav.ico" rel="icon">
-  <link href="assets/img/fav.ico" rel="apple-touch-icon">
+    <!--Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+    <!--Link CSS-->
+    <link rel="stylesheet" href="style.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!--Link font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!--Link icone-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!--Favicon-->
+    <link href="img/logo_per_sito.svg" rel="icon">
+    <link href="img/logo_per_sito.svg" rel="apple-touch-icon">
 
-  <!-- =======================================================
-  * Template Name: MyResume - v4.8.1
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+    <!--Link animazioni-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<body>
+  </head>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <body>
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contatti</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
+    <div class="top">
 
-  </header><!-- End Header -->
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg">
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Gianluca Rossi</h1>
-      <p>Sono uno <span class="typed" data-typed-items="studente di UX Design"></span></p>
-      <div class="social-links">
-        <a href="https://linkedin.com/in/gianluca-rossi-463246224" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://www.instagram.com/ssiroux/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-        <a href="mailto: rossi.gnlc@gmail.com" class="gmail" target="_blank"><i class="bx bxl-gmail"></i></a>
-        <a href="https://www.behance.net/gianlucarossi01" class="behance" target="_blank"><i class="bx bxl-behance"></i></a>
+        <div class="container-fluid space">
+
+          <!--Logo a sinistra-->
+          <a class="navbar-brand" href="#">
+            <img src="img/logo_per_sito.svg" alt="Logo" height="40">
+          </a>
+      
+          <!--Toggle button per i dispositivi mobili-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!--Voci di menù a destra-->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#chiSono">Chi sono</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contatti">Contatti</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+      <!--Sezione di presentazione da XL in su-->
+      <div class="d-none d-xl-block">
+
+        <div class="section firstSection my-image topAlignment">
+
+          <div class="container-fluid">
+            
+            <div class="row">
+
+              <!--Colonna di sinistra con immagine-->
+              <div class="col-md-5">
+                <img src="img/me.png" alt="Immagine" class="img-fluid">
+              </div>
+
+              <!--Colonna di destra con testo-->
+              <div class="col-md-7">
+                <h1>Gianluca Rossi</h1>
+                <h3>UX RESEARCHER AND DESIGNER</h3>
+                <p class="mission"><span id="mission"></span></p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
+
+      <!--Sezione di presentazione da XL in giù-->
+      <div class="d-xl-none">
+
+        <div class="section firstSection topAlignment">
+
+          <div class="container-fluid">
+            
+            <!--Riga con immagine-->
+            <div class="row rowSmall">
+
+              <div class="col-12-fluid">
+                <img src="img/me2.svg" alt="Immagine" class="img-fluid my-image2">
+              </div>
+
+            </div>
+
+            <!--Riga con intestazione-->
+            <div class="row rowSmall" id="rowSmallSecond">
+
+              <div class="col-12">
+
+                <h1>Gianluca Rossi</h1>
+                <h3>UX RESEARCHER AND DESIGNER</h3>
+                <p class="mission"><span id="mission2"></span></p>
+              
+              </div>
+          
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
-  </section><!-- End Hero -->
 
-  <main id="main">
+    <!--Sezione Chi sono-->
+    <div class="section sectionSpace resume" id="chiSono">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+      <div class="container-fluid">
 
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Da sempre interessato alla progettazione e allo sviluppo di tecnologie, dopo aver conseguito il titolo di Tecnico Informatico ho deciso di approfondire gli aspetti legati all’esperienza utente. Il mio interesse principale riguarda la fase di user research, con una particolare attenzione ai problemi e alle esigenze degli utenti.
-            <br>Attualmente studio Interfacce e Tecnologie della Comunicazione presso l'Università degli Studi di Trento.</p>
-        </div>
+        <!--Riga titolo + testo-->
+        <div class="row rowSmall" data-aos="fade-up">
 
-      </div>
-
-      <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Durante il mio percorso di studi ho avuto la possibilità di sviluppare diverse skills, sia hard che soft.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">FIGMA <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">PROGRAMMAZIONE WEB <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JAVA <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">ILLUSTRATOR <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">INDESIGN <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
+           <!--Riga titolo-->
+          <div class="col-12-fluid">
+            <h1 class="sectionTitle ">Chi <span class="textYellow">sono</span></h1>
           </div>
 
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">LAVORO IN TEAM <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">EMPATIA <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">RISPETTO DELLE SCADENZE <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">PROBLEM SOLVING <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CAPACITÀ COMUNICATIVA <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
+          <!--Riga testo-->
+          <div class="col-lg-8">
+            <p class="sectionText">Da sempre interessato al mondo della tecnologia, dopo aver conseguito il titolo di Tecnico Informatico ho deciso di intraprendere un percorso universitario per approfondire gli aspetti legati all’esperienza utente. Ad oggi sono un UX Researcher and Designer in grado di tradurre i bisogni degli utenti in soluzioni di valore.</p>
           </div>
 
         </div>
 
-      </div>
-    </section><!-- End Skills Section -->
-    </section><!-- End About Section -->
+        <!--Riga esperienze + formazione-->
+        <div class="row rowSmall" data-aos="fade-up">
 
-    
+          <!--Esperienze-->
+          <div class="col-lg-6 spaceCV">
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Breve riepilogo del mio profilo formativo e professionale.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Profilo</h3>
-            <div class="resume-item pb-0">
-              <h4>Gianluca Rossi</h4>
-              <p><em>Studente di User Experience Design presso l'Università degli Studi di Trento. Particolarmente interessato al processo di user research, intendo specializzarmi nella progettazione e realizzazione di servizi digitali a partire dalla esigenze degli utenti.</em></p>
-              <ul>
-                <li>Trento, IT</li>
-                <li>rossi.gnlc@gmail.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Formazione</h3>
+            <h2 class="resumeTitle">Esperienze</h2>
             <div class="resume-item">
-              <h4>INTERFACCE E TECNOLOGIE DELLA COMUNICAZIONE</h4>
-              <h5>2020 - OGGI</h5>
-              <p><em>Università degli Studi di Trento, Rovereto, TN</em></p>
-              <p>Gli obiettivi del corso prevedono l’acquisizione di competenze negli aspetti tecnico-informatici, cognitivi e sociali della comunicazione, mediata dalle tecnologie dell’informazione</p>
+
+                <h4>UX Designer - Tirocinio</h4>
+                <pre class="d-none d-md-block">10/2022 - 02/2023  |  Gruppo Barchetti</pre>
+                <pre class="d-md-none firstPre">10/2022 - 02/2023</pre>
+                <pre class="d-md-none">Gruppo Barchetti</pre>
+                <p class="previousP">Progettazione e sviluppo di un portale web per l’organizzazione interna 
+                  dei processi dell’ufficio Risorse Umane. 
+                  Ho lavorato in completa autonomia strutturando un processo iterativo ispirato al modello del Double Diamond e alla metodologia Agile, coinvolgendo gli utenti nelle fasi di ricerca 
+                  e valutazione. Le attività svolte sono state: user research, prototipazione, sviluppo e test della soluzione. 
+                  Questo tirocinio è stato poi oggetto della mia tesi di laurea.</p>
             </div>
+
             <div class="resume-item">
-              <h4>TECNICO INFORMATICO</h4>
-              <h5>2015 - 2020</h5>
-              <p><em>ITT Michelangelo Buonarroti, Trento, TN</em></p>
-              <p>Diploma in Informatica. Competenze acquisite: progettazione e sviluppo di applicativi software, reti informatiche, servizi Internet e mobile, database.</p>
+
+              <h4>PROGRAMMATORE - TIROCINIO</h4>
+              <pre class="d-none d-md-block">05/2019 - 06/2019  |  Maccom Srl</pre>
+              <pre class="d-md-none firstPre">05/2019 - 06/2019</pre>
+              <pre class="d-md-none">Maccom Srl</pre>
+              <p>Analisi e sviluppo di un Event Manager di tipo FIFO basato su Google Cloud Functions. Migrazione dei dati
+                dell’azienda Nordpiumini dal CMS Joomla a Magento.</p>
             </div>
+            
           </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Esperienze professionali</h3>
+
+          <!--Formazione-->
+          <div class="col-lg-6 spaceCV">
+
+            <h2 class="resumeTitle extraSpace">Formazione</h2>
             <div class="resume-item">
-              <h4>UX Designer</h4>
-              <h5>24/10/2022 - 03/02/2023</h5>
-              <p><em>Gruppo Barchetti, Bolzano, BZ </em></p>
-              <p>
-                Durante il tirocinio presso il Gruppo Barchetti mi sono occupato di proseguire la progettazione e lo sviluppo di un portale digitale utile all’organizzazione interna dell’ufficio Risorse Umane. Il progetto si è articolato in nove fasi: brief iniziale, definizione e comprensione del problema tramite osservazione partecipante, presentazione della parte di ricerca all’ufficio Risorse Umane, ideazione della soluzione attraverso design concept, prototipazione su Figma, sviluppo dell’interfaccia, test con gli utenti, implementazione delle integrazioni basate sui risultati dello user testing e presentazione finale del progetto alla responsabile delle Risorse Umane.
-Durante tutta la durata del progetto ho lavorato in completa autonomia, avendo però un dialogo continuo con i dipendenti delle Risorse Umane per raccogliere informazioni e avere un feedback sulla user experience del portale.</p>
+
+             <div class="firstLine"><h4>Interfacce e Tecnologie della Comunicazione</h4></div>
+              <pre class="d-none d-md-block">2020 - 2023  |  Università di Trento</pre>
+              <pre class="d-md-none firstPre">2020 - 2023</pre>
+              <pre class="d-md-none">Università di Trento</pre>
+              <p>Gli obiettivi del corso prevedono l’acquisizione di competenze negli aspetti tecnico-informatici, cognitivi 
+                e sociali della comunicazione, mediata dalle tecnologie dell’informazione.
+              </p>
+              <p class="previousP">
+                Voto finale: 110 e Lode/110.
+              </p>
             </div>
 
             <div class="resume-item">
+
               <h4>Tecnico informatico</h4>
-              <h5>27/05/2019 - 28/06/2019</h5>
-              <p><em>Maccom S.R.L., Trento, TN </em></p>
+              <pre class="d-none d-md-block">2015 - 2020  |  ITT M.Buonarroti, Trento</pre>
+              <pre class="d-md-none firstPre">2015 - 2020</pre>
+              <pre class="d-md-none">ITT M.Buonarroti, Trento</pre>
               <p>
-                Analisi e sviluppo di un Event Manager di tipo FIFO basato su Google Cloud Functions. Migrazione dei dati dell’azienda Nordpiumini dal CMS Joomla a Magento.</p>
+                Competenze acquisite: progettazione e sviluppo di applicativi software, reti informatiche, servizi Internet e mobile, database.
+              </p>
+              <p>
+                Voto finale: 100/100.
+              </p>
             </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>I miei lavori recenti.</p>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/giotta.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Giotta E-Grocery Mobile App</h4>
-                <p>Mobile App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/giotta.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Giotta E-Grocery Mobile App"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.behance.net/gallery/148415927/E-grocery-App" target="_blank"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/bsc.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Brawl Stars Companion Web App</h4>
-                <p>Web App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/bsc.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Brawl Stars Companion Web App"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.behance.net/gallery/148288831/Brawl-Stars-Companion-Web-App" target="_blank"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contatti</h2>
-        </div>
-
-        <div class="row mt-1">
-
-          <div class="col-md-4 col-sm-6">
-            <div class="info">
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>rossi.gnlc@gmail.com</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-md-4 col-sm-6">
-            <div class="info">
-
-              <div class="email">
-                <i class="bi bi-instagram"></i>
-                <h4>Instagram:</h4>
-                <p>@ssiroux</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-md-4 ">
-            <div class="info">
-
-              <div class="email">
-                <i class="bi bi-behance"></i>
-                <h4>Behance:</h4>
-                <p>behance.net/gianlucarossi01</p>
-              </div>
-
-            </div>
-
+            
           </div>
 
         </div>
+  
+      </div>
 
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Gianluca Rossi</h3>
-      <p>User Experience Design Student</p>
-      <div class="social-links">
-        <a href="https://linkedin.com/in/gianluca-rossi-463246224" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://www.instagram.com/ssiroux/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-        <a href="mailto: rossi.gnlc@gmail.com" class="gmail" target="_blank"><i class="bx bxl-gmail"></i></a>
-        <a href="https://www.behance.net/gianlucarossi01" class="behance" target="_blank"><i class="bx bxl-behance"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
-      </div>
     </div>
-  </footer><!-- End Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!--Pulsante scarica CV-->
+    <div class="container text-center sectionSpace" data-aos="fade-up">
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+      <div class="row rowSmall justify-content-center">
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+        <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6 col-xxl-4">
 
-</body>
+          <a href="docs/Rossi_Gianluca_CV.pdf" download target="_blank">
+            <button class="btn btn-primary btnStyle w-100">Scarica il mio CV</button>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+   
+    <!--Sezione Portfolio-->
+    <div class="section sectionSpace top" id="portfolio">
+
+      <div class="container-fluid sectionSpacex2">
+
+        <!--Riga titolo + testo-->
+        <div class="row rowSmall" data-aos="fade-up">
+
+          <!--Riga titolo-->
+          <div class="col-12-fluid">
+            <h1 class="sectionTitle">Portfolio</h1>
+          </div>
+
+          <!--Riga testo-->
+          <div class="col-xl-8">
+            <p class="sectionText">Durante i tre anni all’Università di Trento ho avuto la possibilità di partecipare a svariati progetti che mi hanno aiutato a sviluppare le capacità che oggi mi rendono in grado di adattarmi a qualsiasi situazione progettuale. La sezione portfolio di questo sito è ancora in costruzione; nonostante ciò è possibile visualizzare una selezione dei miei lavori sul mio profilo Behance al seguente indirizzo: <a href="https://www.behance.net/gianlucarossi01" target="_blank" class="linkOnYellow">www.behance.net/gianlucarossi01</a>.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Sezione Contatti-->
+    <div class="section sectionSpace" id="contatti">
+
+      <div class="container-fluid">
+
+        <!--Riga titolo + testo-->
+        <div class="row rowSmall" data-aos="fade-up">
+
+          <!--Riga titolo-->
+          <div class="col-12-fluid">
+            <h1 class="sectionTitle">Restiamo in <span class="textYellow">contatto</span></h1>
+          </div>
+
+          <!--Riga testo-->
+          <div class="col-xl-8">
+            <p class="sectionText">Per collaborazioni o per qualsiasi altra informazione non esitare a contattarmi! Oltre al mio indirizzo e-mail <a href="mailto: rossi.gnlc@gmail.com" class="textYellow" target="_blank">rossi.gnlc@gmail.com</a> mi trovi anche su LinkedIn, Behance e Instagram.</p>
+          </div>
+
+        </div>
+
+        <!--Riga contatti-->
+        <div class="row rowSmall contatti" data-aos="fade-up">
+
+          <!--Gmail -->
+          <div class="col-xl-4 col-md-6">
+
+            <div class="d-flex align-items-center">
+
+              <a href="mailto:rossi.gnlc@gmail.com" target="_blank">
+
+                <div class="social-icon">
+  
+                  <img src="img/icons/mail.svg" alt="mail">
+  
+                </div>
+                
+              </a>
+  
+              <p class="mb-0"><b>E-mail</b><br>rossi.gnlc@gmail.com</p>
+
+            </div>
+
+          </div>
+
+          <!--Linkedin-->
+          <div class="col-xl-4 col-md-6">
+
+            <div class="d-flex align-items-center">
+
+              <a href="https://www.linkedin.com/in/gianluca-rossi-ux" target="_blank">
+
+                <div class="social-icon">
+  
+                  <img src="img/icons/linkedin.svg" alt="linkedin">
+  
+                </div>
+                
+              </a>
+  
+              <p class="mb-0"><b>LinkedIn</b><br>linkedin.com/in/gianluca-rossi-ux</p>
+
+            </div>
+
+          </div>
+
+          <!--Behance-->
+          <div class="col-xl-4 col-md-6">
+
+            <div class="d-flex align-items-center">
+
+              <a href="https://www.behance.net/gianlucarossi01" target="_blank">
+
+                <div class="social-icon">
+  
+                  <img src="img/icons/behance.svg" alt="behance">
+  
+                </div>
+                
+              </a>
+  
+              <p class="mb-0"><b>Behance</b><br>behance.net/gianlucarossi01</p>
+
+            </div>
+
+          </div>
+
+          <!--Instagram-->
+          <div class="col-xl-4 col-md-6">
+
+            <div class="d-flex align-items-center">
+
+              <a href="https://www.instagram.com/ssiroux" target="_blank">
+
+                <div class="social-icon">
+  
+                  <img src="img/icons/instagram.svg" alt="instagram">
+  
+                </div>
+                
+              </a>
+  
+              <p class="mb-0"><b>Instagram</b><br>@ssiroux</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Separatore footer-->
+    <div class="section">
+
+      <div class="container-fluid">
+
+        <div class="row rowSmall rowDivider">
+
+          <div class="dividerFooter"></div>
+
+        </div>
+      
+      </div>
+
+    </div>
+   
+    
+    <!--Footer-->
+    <footer>
+
+      <div class="container-fluid mb-4">
+
+        <div class="row rowSmall">
+
+          <div class="col-6">
+
+            <div class="w-100 h-100">
+
+              <div class="row mb-3">
+
+                <a class="nav-footer" href="#">Home</a>
+
+              </div>
+
+              <div class="row mb-3">
+
+                <a class="nav-footer" href="#chiSono">Chi sono</a>
+
+              </div>
+
+              <div class="row mb-3">
+
+                <a class="nav-footer" href="#portfolio">Portfolio</a>
+
+              </div>
+
+              <div class="row">
+
+                <a class="nav-footer" href="#contatti">Contatti</a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-6">
+
+            <div class="flex-container">
+
+              <div class="row d-flex justify-content-end contatti-footer">
+
+                <!--Gmail-->
+                <div class="col-3 d-flex justify-content-end mb-2">
+                  
+                  <a href="mailto:rossi.gnlc@gmail.com" target="_blank">
+
+                    <div class="social-icon">
+      
+                      <img src="img/icons/mail.svg" alt="mail">
+      
+                    </div>
+                    
+                  </a>
+
+                </div>
+
+                <!--Linkedin-->
+                <div class="col-3 d-flex justify-content-end mb-2">
+                  
+                  <a href="https://www.linkedin.com/in/gianluca-rossi-ux" target="_blank">
+
+                    <div class="social-icon">
+      
+                      <img src="img/icons/linkedin.svg" alt="mail">
+      
+                    </div>
+                    
+                  </a>
+
+                </div>
+
+                <!--Behance-->
+                <div class="col-3 d-flex justify-content-end">
+                  
+                  <a href="https://www.behance.net/gianlucarossi01" target="_blank">
+
+                    <div class="social-icon">
+      
+                      <img src="img/icons/behance.svg" alt="mail">
+      
+                    </div>
+                    
+                  </a>
+
+                </div>
+
+                <!--Instagram-->
+                <div class="col-3 d-flex justify-content-end">
+                  
+                  <a href="https://www.instagram.com/ssiroux" target="_blank">
+
+                    <div class="social-icon">
+      
+                      <img src="img/icons/instagram.svg" alt="mail">
+      
+                    </div>
+                    
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="flex-grow-1 d-flex justify-content-end align-items-end">
+
+                <div class="row">
+
+                  <div class="col-12"> 
+
+                    <small>Copyright &copy; 2024 Gianluca Rossi</small>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+    </footer>
+
+    <!--Link JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!--Script per animazione testo-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!--Script per animazioni AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Il mio file JS-->
+    <script src="script.js"></script>
+
+  </body>
 
 </html>
