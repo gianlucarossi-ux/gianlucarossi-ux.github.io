@@ -10,7 +10,7 @@
 
     <!--Link Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
+
     <!--Link CSS-->
     <link rel="stylesheet" href="style.css">
 
@@ -33,21 +33,23 @@
 
   <body>
 
-    <div class="top">
+    <div class="firstSection">
 
       <!--Navbar-->
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg sticky-top">
 
         <div class="container-fluid space">
 
           <!--Logo a sinistra-->
           <a class="navbar-brand" href="#">
-            <img src="img/logo_per_sito.svg" alt="Logo" height="40">
+            <img src="img/logo_per_sito_inverso.svg" alt="Logo" height="40">
           </a>
       
           <!--Toggle button per i dispositivi mobili-->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
           </button>
       
           <!--Voci di menù a destra-->
@@ -55,13 +57,13 @@
 
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#chiSono">Chi sono</a>
+                <a class="nav-link nav-link-dim" href="#chiSono" onclick="closeNavbar()">Chi sono</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
+                <a class="nav-link nav-link-dim" href="#portfolio" onclick="closeNavbar()">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contatti">Contatti</a>
+                <a class="nav-link" href="#contatti" onclick="closeNavbar()">Contatti</a>
               </li>
             </ul>
 
@@ -71,69 +73,36 @@
 
       </nav>
 
-      <!--Sezione di presentazione da XL in su-->
-      <div class="d-none d-xl-block">
+      <!--Hero section-->
+      <div class="container-fluid hero-section">
 
-        <div class="section firstSection my-image topAlignment">
+        <div class="row hero-margin d-flex align-items-center">
 
-          <div class="container-fluid">
-            
-            <div class="row">
+          <div class="col-xl-5 col-12">
 
-              <!--Colonna di sinistra con immagine-->
-              <div class="col-md-5">
-                <img src="img/me.png" alt="Immagine" class="img-fluid">
-              </div>
-
-              <!--Colonna di destra con testo-->
-              <div class="col-md-7">
-                <h1>Gianluca Rossi</h1>
-                <h3>UX RESEARCHER AND DESIGNER</h3>
-                <p class="mission"><span id="mission"></span></p>
-              </div>
-
-            </div>
+            <img class="hero-image" data-aos="fade-right" src="img/hero_image.png" alt="rossi_gianluca_ux">
 
           </div>
 
-        </div>
-
-      </div>
-
-      <!--Sezione di presentazione da XL in giù-->
-      <div class="d-xl-none">
-
-        <div class="section firstSection topAlignment">
-
-          <div class="container-fluid">
+          <div class="col-xl-7 col-12 hero-desc">
             
-            <!--Riga con immagine-->
-            <div class="row rowSmall">
+            <h1 class="display-1">Gianluca Rossi</h1>
 
-              <div class="col-12-fluid">
-                <img src="img/me2.svg" alt="Immagine" class="img-fluid my-image2">
-              </div>
+            <h1 class="display-3">UX RESEARCHER AND DESIGNER</h1>
 
-            </div>
-
-            <!--Riga con intestazione-->
-            <div class="row rowSmall" id="rowSmallSecond">
-
-              <div class="col-12">
-
-                <h1>Gianluca Rossi</h1>
-                <h3>UX RESEARCHER AND DESIGNER</h3>
-                <p class="mission"><span id="mission2"></span></p>
+            <h1 class="display-6">Progetto soluzioni a partire dai bisogni degli utenti</h1>
+            
+            <a href="#chiSono" class="btn btn-primary hero-button d-flex justify-content-center align-items-center" role="button">
               
-              </div>
-          
-            </div>
+              scopri di più
+
+            </a>
 
           </div>
 
         </div>
 
-      </div>
+      </div>  
 
     </div>
 
@@ -151,7 +120,7 @@
           </div>
 
           <!--Riga testo-->
-          <div class="col-lg-8">
+          <div class="col-lg-8 col-xl-7 col-xxl-6">
             <p class="sectionText">Da sempre interessato al mondo della tecnologia, dopo aver conseguito il titolo di Tecnico Informatico ho deciso di intraprendere un percorso universitario per approfondire gli aspetti legati all’esperienza utente. Ad oggi sono un UX Researcher and Designer in grado di tradurre i bisogni degli utenti in soluzioni di valore.</p>
           </div>
 
@@ -247,7 +216,7 @@
     </div>
    
     <!--Sezione Portfolio-->
-    <div class="section sectionSpace top" id="portfolio">
+    <div class="section sectionSpace portfolio" id="portfolio">
 
       <div class="container-fluid sectionSpacex2">
 
@@ -260,7 +229,7 @@
           </div>
 
           <!--Riga testo-->
-          <div class="col-xl-8">
+          <div class="col-lg-8 col-xl-7 col-xxl-6">
             <p class="sectionText">Durante i tre anni all’Università di Trento ho avuto la possibilità di partecipare a svariati progetti che mi hanno aiutato a sviluppare le capacità che oggi mi rendono in grado di adattarmi a qualsiasi situazione progettuale. La sezione portfolio di questo sito è ancora in costruzione; nonostante ciò è possibile visualizzare una selezione dei miei lavori sul mio profilo Behance al seguente indirizzo: <a href="https://www.behance.net/gianlucarossi01" target="_blank" class="linkOnYellow">www.behance.net/gianlucarossi01</a>.</p>
           </div>
 
@@ -284,7 +253,7 @@
           </div>
 
           <!--Riga testo-->
-          <div class="col-xl-8">
+          <div class="col-lg-8 col-xl-7 col-xxl-6">
             <p class="sectionText">Per collaborazioni o per qualsiasi altra informazione non esitare a contattarmi! Oltre al mio indirizzo e-mail <a href="mailto: rossi.gnlc@gmail.com" class="textYellow" target="_blank">rossi.gnlc@gmail.com</a> mi trovi anche su LinkedIn, Behance e Instagram.</p>
           </div>
 
@@ -294,7 +263,7 @@
         <div class="row rowSmall contatti" data-aos="fade-up">
 
           <!--Gmail -->
-          <div class="col-xl-4 col-md-6">
+          <div class="col-lg-6">
 
             <div class="d-flex align-items-center">
 
@@ -308,14 +277,14 @@
                 
               </a>
   
-              <p class="mb-0"><b>E-mail</b><br>rossi.gnlc@gmail.com</p>
+              <p class="mb-0"><b>E-mail</b><br><a class="contatti-link" href="mailto:rossi.gnlc@gmail.com" target="_blank">rossi.gnlc@gmail.com</a></p>
 
             </div>
 
           </div>
 
           <!--Linkedin-->
-          <div class="col-xl-4 col-md-6">
+          <div class="col-lg-6">
 
             <div class="d-flex align-items-center">
 
@@ -329,14 +298,14 @@
                 
               </a>
   
-              <p class="mb-0"><b>LinkedIn</b><br>linkedin.com/in/gianluca-rossi-ux</p>
+              <p class="mb-0"><b>LinkedIn</b><br><a class="contatti-link" href="https://www.linkedin.com/in/gianluca-rossi-ux" target="_blank">linkedin.com/in/gianluca-rossi-ux</a></p>
 
             </div>
 
           </div>
 
           <!--Behance-->
-          <div class="col-xl-4 col-md-6">
+          <div class="col-lg-6">
 
             <div class="d-flex align-items-center">
 
@@ -350,14 +319,14 @@
                 
               </a>
   
-              <p class="mb-0"><b>Behance</b><br>behance.net/gianlucarossi01</p>
+              <p class="mb-0"><b>Behance</b><br><a class="contatti-link" href="https://www.behance.net/gianlucarossi01" target="_blank">behance.net/gianlucarossi01</a></p>
 
             </div>
 
           </div>
 
           <!--Instagram-->
-          <div class="col-xl-4 col-md-6">
+          <div class="col-xxl-6 col-lg-6">
 
             <div class="d-flex align-items-center">
 
@@ -371,7 +340,7 @@
                 
               </a>
   
-              <p class="mb-0"><b>Instagram</b><br>@ssiroux</p>
+              <p class="mb-0"><b>Instagram</b><br><a class="contatti-link" href="https://www.instagram.com/ssiroux" target="_blank">@ssiroux</a></p>
 
             </div>
 
@@ -412,25 +381,25 @@
 
               <div class="row mb-3">
 
-                <a class="nav-footer" href="#">Home</a>
+                <div><a class="nav-footer" href="#">Home</a></div>
 
               </div>
 
               <div class="row mb-3">
 
-                <a class="nav-footer" href="#chiSono">Chi sono</a>
+                <div><a class="nav-footer" href="#chiSono">Chi sono</a></div>
 
               </div>
 
               <div class="row mb-3">
 
-                <a class="nav-footer" href="#portfolio">Portfolio</a>
+                <div><a class="nav-footer" href="#portfolio">Portfolio</a></div>
 
               </div>
 
               <div class="row">
 
-                <a class="nav-footer" href="#contatti">Contatti</a>
+                <div><a class="nav-footer" href="#contatti">Contatti</a></div>
 
               </div>
 
@@ -534,6 +503,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
+    <!--Link JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
     <!--Script per animazione testo-->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
