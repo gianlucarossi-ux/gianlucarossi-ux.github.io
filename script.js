@@ -22,3 +22,12 @@ document.addEventListener("scroll", function() {
       animatedImage.classList.remove("hidden");
   }
 });
+
+//funzione per utilizzare l'anno corrente per la scritta del copyright
+$(document).ready(function() {
+  // Ottieni l'anno corrente
+  var currentYear = new Date().getFullYear();
+
+  // Scrivi l'anno corrente all'interno dell'elemento con id "anno"
+  $('#anno').text(currentYear);
+});
