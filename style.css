@@ -24,7 +24,6 @@
   }
 
   .sectionTitle{
-    font-weight: 400;
     font-size: 35pt !important;
   }
 
@@ -61,7 +60,6 @@
 
   pre{
     color: #FFB703;
-    font-family: "Raleway", sans-serif;
     white-space: pre-wrap;
     font-size: 14pt;
     margin-top: 2%;
@@ -151,7 +149,6 @@
   .display-1{
     font-size: 30pt !important;
     margin-bottom: 5pt;
-    font-weight: 500;
   }
 
   .display-3{
@@ -191,7 +188,6 @@
   }
 
   .sectionTitle{
-    font-weight: 400;
     font-size: 35pt !important;
   }
 
@@ -224,7 +220,6 @@
 
   pre{
     color: #FFB703;
-    font-family: "Raleway", sans-serif;
     white-space: pre-wrap;
     font-size: 14pt;
     margin-top: 2%;
@@ -336,7 +331,6 @@
   }
 
   .sectionTitle{
-    font-weight: 400;
     font-size: 35pt !important;
   }
 
@@ -369,7 +363,6 @@
 
   pre{
     color: #FFB703;
-    font-family: "Raleway", sans-serif;
     white-space: pre-wrap;
     font-size: 0.85rem;
     margin-top: 2%;
@@ -480,7 +473,6 @@
   }
 
   .sectionTitle{
-    font-weight: 400;
     font-size: 37.5pt !important;
   }
 
@@ -517,7 +509,6 @@
 
   pre{
     color: #FFB703;
-    font-family: "Raleway", sans-serif;
     white-space: pre-wrap;
     font-size: 15pt;
     margin-top: 2%;
@@ -648,7 +639,6 @@
   }
 
   .sectionTitle{
-    font-weight: 400;
     font-size: 37.5pt !important;
   }
 
@@ -681,7 +671,6 @@
 
   pre{
     color: #FFB703;
-    font-family: "Raleway", sans-serif;
     white-space: pre-wrap;
     font-size: 15pt;
     margin-top: 2%;
@@ -792,7 +781,6 @@
 
 @media (min-width: 2000px) {
   .sectionTitle{
-    font-weight: 400;
     font-size: 45pt !important;
   }
 
@@ -820,7 +808,6 @@
 
   pre{
     color: #FFB703;
-    font-family: "Raleway", sans-serif;
     white-space: pre-wrap;
     font-size: 18pt;
     margin-top: 2%;
@@ -927,7 +914,7 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #191919 !important;
   color: #F4F4F4;
   height: 100%;
@@ -1238,4 +1225,18 @@ nav a:hover{
 
 .hidden {
   opacity: 0; /* Quando la bouncing icon ha la classe hidden, l'opacità diventa 0 */
+}
+
+.display-1{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+}
+
+.sectionTitle{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: lighter;
+}
+
+pre{
+  font-family: 'Poppins', sans-serif;
 }
