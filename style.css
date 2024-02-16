@@ -1464,7 +1464,7 @@ pre{
   animation: slideInFromLeft 0.5s ease forwards;
 }
 
-.link-to-animate:hover{
+.nav-link-mobile:hover{
   text-decoration: underline;
 }
 
