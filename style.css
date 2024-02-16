@@ -1029,6 +1029,23 @@
   }
 }
 
+/*Menu a schermo intero per dispositivi mobile in verticale*/
+@media (max-width: 991px) and (orientation: landscape) {
+  .nav-link-mobile{
+    font-weight: 300;
+    font-size: 20pt !important;
+    margin-left: 1.2%;
+    padding-left: 12px;
+    margin-right: 1.2%;
+    padding-right: 12px;
+    display: inline;
+  }
+
+  .nav-item-mobile{
+    margin-bottom: 2%;
+  }
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #191919 !important;
