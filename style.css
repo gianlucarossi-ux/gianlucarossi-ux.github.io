@@ -1436,9 +1436,11 @@ pre{
 }
 
 .navbar-nav.social-icons {
-  position: absolute;
-  bottom: 10px; /* Regolare la distanza dal bordo inferiore dello schermo */
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
+  padding: 10px 0; /* Padding per le icone social */
 }
 
 .navbar-nav.social-icons .divider {
