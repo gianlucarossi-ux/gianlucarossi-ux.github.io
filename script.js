@@ -31,3 +31,16 @@ $(document).ready(function() {
   // Scrivi l'anno corrente all'interno dell'elemento con id "anno"
   $('#anno').text(currentYear);
 });
+
+function toggleMenu() {
+  var body = document.querySelector('body');
+  var links = document.querySelectorAll('.link-to-animate');
+
+  body.classList.toggle('menu-open');
+
+  links.forEach(function(link) {
+    link.classList.add('link-animation');
+  });
+}
+
+
