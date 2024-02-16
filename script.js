@@ -42,5 +42,3 @@ function toggleMenu() {
     link.classList.add('link-animation');
   });
 }
-
-

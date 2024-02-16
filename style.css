@@ -1033,16 +1033,36 @@
 @media (max-width: 991px) and (orientation: landscape) {
   .nav-link-mobile{
     font-weight: 300;
-    font-size: 18pt !important;
-    margin-left: 1.2%;
-    padding-left: 12px;
-    margin-right: 1.2%;
-    padding-right: 12px;
+    font-size: 28pt !important;
+    margin-left: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
     display: inline;
   }
 
   .nav-item-mobile{
     margin-bottom: 1% !important;
+  }
+
+  .mobile-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left; /* Puoi regolare il tipo di allineamento che preferisci */
+    margin-left: 1.2%;
+    margin-left: 1.2%;
+    padding-left: 12px;
+    margin-right: 1.2%;
+    padding-right: 12px;
+  }
+
+  .point-divider{
+    display: inline-flex !important;
+    align-items: center;
+  }
+
+  .offset{
+    padding-left: 12px !important;
   }
 }
 
@@ -1481,4 +1501,8 @@ pre{
 
 .navbar-nav.social-icons .social-icons-container .social-icon {
   margin-right: 12px;
+}
+
+.point-divider{
+  display: none;
 }
