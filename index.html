@@ -1,679 +1,101 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gianluca Rossi | UX Designer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23A4F4CF' /%3E%3C/svg%3E">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gianluca Rossi - UX R&D</title>
+    <!-- Poppins da Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <!--Link Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!--Link CSS-->
+    <!-- Configurazione di Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              nohemi: ['Nohemi', 'sans-serif'],
+            },
+            colors: {
+              background: '#002C22',
+              text: '#A4F4CF',
+            },
+            screens: {
+              'xs': '0px',
+              'sm': '375px',
+              'md': '440px',
+              'lg': '744px',
+              'xl': '834px',
+              '2xl': '1024px',
+              '3xl': '1280px',
+              '4xl': '1440px',
+              '5xl': '1728px',
+            },
+          },
+        }
+      }
+    </script>
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
-    <!--Link font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    
-    <!--Link icone-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!--Favicon-->
-    <link href="img/logo_per_sito.svg" rel="icon">
-    <link href="img/logo_per_sito.svg" rel="apple-touch-icon">
-
-    <!--Link animazioni-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <!-- Font Nohemi locale -->
+    <style>      
+      @font-face {
+        font-family: 'Nohemi';
+        src: url('fonts/Nohemi-VF.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
   </head>
 
-  <body>
-
-    <div class="firstSection">
-
-      <!--Navbar-->
-      <nav class="navbar navbar-expand-lg sticky-top">
-
-        <div class="container-fluid space">
-
-          <!--Logo a sinistra-->
-          <a class="navbar-brand" href="#">
-            <img src="img/logo_per_sito_inverso.svg" alt="Logo" height="40">
-          </a>
+  <body class="bg-background text-text font-sans mx-[1.5rem] xs:mx-[1.5rem] sm:mx-[1.5rem] md:mx-[1.5rem] lg:mx-[5rem] xl:mx-[5rem] 2xl:mx-[5rem] 3xl:mx-[8rem] 4xl:mx-[8rem] 5xl:mx-[9rem]">
+    <section id="hero" class="flex flex-col py-[5rem] xs:py-[5rem] sm:py-[8rem] md:py-[8rem] lg:py-[10rem] xl:py-[12rem] 2xl:py-[12rem] 3xl:py-[10rem] 4xl:py-[6.5rem] 5xl:py-[8rem]">
+      <!-- Immagine con animazione AOS: fade-up -->
+      <div class="mb-[1.5rem] xs:mb-[1.5rem] sm:mb-[2rem] md:mb-[2.5rem] lg:mb-[2.5rem] xl:mb-[2.5rem] 2xl:mb-[3.5rem] 3xl:mb-[3.5rem] 4xl:mb-[2rem] 5xl:mb-[4rem]" data-aos="fade-up">
+        <img src="img/profile.webp" alt="Profile Image" class="w-[4rem] h-[4rem] xs:w-[4rem] xs:h-[4rem] sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[8rem] lg:h-[8rem] xl:w-[8rem] xl:h-[8rem] 2xl:w-[9rem] 2xl:h-[9rem] 3xl:w-[8rem] 3xl:h-[8rem] 4xl:w-[8.5rem] 4xl:h-[8.5rem] 5xl:w-[10rem] 5xl:h-[10rem]" />
+      </div>
+    
+      <!-- Titolo con animazione AOS -->
+      <div class="mb-[2rem] xs:mb-[2rem] sm:mb-[2.5rem] md:mb-[3rem] lg:mb-[3rem] xl:mb-[3rem] 2xl:mb-[4rem] 3xl:mb-[4rem] 4xl:mb-[3rem] 5xl:mb-[5rem]" data-aos="fade-up">
+        <h1 class="font-nohemi text-[2.5rem] leading-[2.875rem] xs:text-[2.5rem] xs:leading-[2.875rem] sm:text-[3.25rem] sm:leading-[3.625rem] md:text-[4rem] md:leading-[4.375rem] lg:text-[6rem] lg:leading-[6.375rem] xl:text-[6rem] xl:leading-[6.375rem] 2xl:text-[8rem] 2xl:leading-[8.375rem] 3xl:text-[5.5rem] 3xl:leading-[5.875rem] 4xl:text-[6.5rem] 4xl:leading-[7rem] 5xl:text-[8rem] 5xl:leading-[8.375rem]">
+          Hi! I'm Gianluca, <br>a passionate UX Designer based in Italy
+        </h1>
+      </div>
       
-          <!--Toggle button per i dispositivi mobili-->
-          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
-            <span class="toggler-icon top-bar"></span>
-            <span class="toggler-icon middle-bar"></span>
-            <span class="toggler-icon bottom-bar"></span>
+      <!-- CTA con animazione AOS -->
+      <div id="cta-wrapper" class="flex flex-col md:flex-row md:gap-x-[0.5rem] gap-y-[1rem]" data-aos="fade-up" data-aos-delay="200">
+        <!-- Pulsante LET'S TALK -->
+        <a href="https://www.linkedin.com/in/gianluca-rossi-ux/" target="_blank" class="w-full md:w-auto">
+          <button class="w-full md:min-w-[11.625rem] font-nohemi font-semibold uppercase text-[1rem] leading-normal bg-[#A4F4CF] text-[#002C22] rounded-full py-[0.5rem] px-[1rem] whitespace-nowrap box-border transition-colors duration-300 hover:bg-[#D0FAE5] hover:text-[#002C22]">
+            LET'S TALK
           </button>
-
-          <!--Voci di menu-->
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-
-            <!--Desktop-->
-            <ul class="navbar-nav d-none d-lg-flex">
-              <li class="nav-item">
-                <a class="nav-link nav-link-dim" href="#chiSono" onclick="closeNavbar()">Chi sono</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-dim" href="#portfolio" onclick="closeNavbar()">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contatti" onclick="closeNavbar()">Contatti</a>
-              </li>
-            </ul>
-
-            <!--Mobile-->
-            <ul class="navbar-nav d-lg-none mobile-row">
-              <li class="nav-item nav-item-mobile link-to-animate">
-                <a class="nav-link nav-link-dim nav-link-mobile" href="#chiSono" onclick="closeNavbar()">Chi sono</a>
-              </li>
-              <span class="point-divider link-to-animate">&#x25CF;</span>
-              <li class="nav-item nav-item-mobile link-to-animate">
-                <a class="nav-link nav-link-dim nav-link-mobile offset" href="#portfolio" onclick="closeNavbar()">Portfolio</a>
-              </li>
-              <span class="point-divider link-to-animate">&#x25CF;</span>
-              <li class="nav-item nav-item-mobile link-to-animate offset">
-                <a class="nav-link nav-link-mobile" href="#contatti" onclick="closeNavbar()">Contatti</a>
-              </li>
-            </ul>
-
-
-            <!-- Divider e icone social -->
-            <div class="navbar-nav social-icons d-lg-none link-to-animate">
-
-              <div style="margin-left: 1.2%; margin-right: 1.2%;"><div style="margin-left: 12px; margin-right: 12px;"><hr class="divider"></div></div>
-
-              <div class="social-icons-container">
-
-                <!--Gmail-->
-                <a href="mailto:rossi.gnlc@gmail.com" target="_blank">
-
-                  <div class="social-icon">
+        </a>
+      
+        <!-- Pulsante OPEN RESUME -->
+        <a href="docs/Rossi_Gianluca_CV.pdf" target="_blank" class="w-full md:w-auto">
+          <button class="w-full md:min-w-[11.625rem] font-nohemi font-semibold uppercase text-[1rem] leading-normal border-2 border-[#A4F4CF] text-[#A4F4CF] rounded-full py-[calc(0.5rem-1px)] px-[calc(1rem-1px)] whitespace-nowrap box-border transition-colors duration-300 hover:bg-[#A4F4CF] hover:text-[#002C22]">
+            OPEN RESUME
+          </button>
+        </a>
+      </div>            
+    </section>
     
-                    <img src="img/icons/mail.svg" alt="mail">
+    <!--<section id="contacts" class="flex flex-col py-[5rem] xs:py-[5rem] sm:py-[8rem] md:py-[8rem] lg:py-[10rem] xl:py-[12rem] 2xl:py-[12rem] 3xl:py-[10rem] 4xl:py-[6.5rem] 5xl:py-[8rem]"></section>-->         
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     
-                  </div>
-                  
-                </a>
-
-                <!--Linkedin-->
-                <a href="https://www.linkedin.com/in/gianluca-rossi-ux" target="_blank">
-
-                  <div class="social-icon">
-    
-                    <img src="img/icons/linkedin.svg" alt="mail">
-    
-                  </div>
-                  
-                </a>
-
-                <!--Behance-->
-                <a href="https://www.behance.net/gianlucarossi01" target="_blank">
-
-                  <div class="social-icon">
-    
-                    <img src="img/icons/behance.svg" alt="mail">
-    
-                  </div>
-                  
-                </a>
-
-                <!--Instagram-->
-                <a href="https://www.instagram.com/ssiroux" target="_blank">
-
-                  <div class="social-icon">
-    
-                    <img src="img/icons/instagram.svg" alt="instagram">
-    
-                  </div>
-                  
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>          
-
-        </div>
-
-      </nav>
-
-      <!--Hero section-->
-      <div class="container-fluid hero-section">
-
-        <div class="row hero-margin d-flex align-items-xl-center">
-
-          <div class="col-xl-5 col-12">
-
-            <img class="hero-image" data-aos="fade-right" src="img/hero_image.png" alt="rossi_gianluca_ux">
-
-          </div>
-
-          <div class="col-xl-7 col-12 hero-desc">
-            
-            <h1 class="display-1">Gianluca Rossi</h1>
-
-            <h1 class="display-3">UX RESEARCHER AND DESIGNER</h1>
-
-            <h1 class="display-6">Progetto soluzioni di valore a partire dai bisogni degli utenti</h1>         
-              
-          </div>
-
-        </div>
-
-        <div class="row bounce-margin">
-
-          <a href="#chiSono" class="bouncing-container" >
-                        
-            <img class="bouncing-icon" id="animatedImage" src="img/icons/bouncing_icon.svg" alt="bouncing_icon">
-  
-          </a>
-  
-        </div>
-
-      </div>  
-
-    </div>
-
-    <!--Sezione Chi sono-->
-    <div id="chiSono"></div>
-    <div class="section sectionSpace resume">
-
-      <div class="container-fluid">
-
-        <!--Riga titolo + testo-->
-        <div class="row rowSmall" data-aos="fade-up">
-
-           <!--Riga titolo-->
-          <div class="col-12-fluid">
-            <h1 class="sectionTitle ">Chi <span class="textYellow">sono</span></h1>
-          </div>
-
-          <!--Riga testo-->
-          <div class="col-lg-8 col-xl-7 col-xxl-6">
-            <p class="sectionText">Da sempre interessato al mondo della tecnologia, dopo aver conseguito il titolo di Tecnico Informatico ho deciso di intraprendere un percorso universitario per approfondire gli aspetti legati all’esperienza utente. Ad oggi sono un UX Researcher and Designer in grado di tradurre i bisogni degli utenti in soluzioni di valore.</p>
-          </div>
-
-        </div>
-
-        <!--Riga esperienze + formazione-->
-        <div class="row rowSmall" data-aos="fade-up">
-
-          <!--Esperienze-->
-          <div class="col-lg-6 spaceCV">
-
-            <h2 class="resumeTitle">Esperienze</h2>
-            <div class="resume-item">
-
-                <h4>UX Designer - Tirocinio</h4>
-                <pre class="d-none d-md-block">10/2022 - 02/2023  |  Gruppo Barchetti</pre>
-                <pre class="d-md-none firstPre">10/2022 - 02/2023</pre>
-                <pre class="d-md-none">Gruppo Barchetti</pre>
-                <p class="previousP">Progettazione e sviluppo di un portale web per l’organizzazione interna 
-                  dei processi dell’ufficio Risorse Umane. 
-                  Ho lavorato in completa autonomia strutturando un processo iterativo ispirato al modello del Double Diamond e alla metodologia Agile, coinvolgendo gli utenti nelle fasi di ricerca 
-                  e valutazione. Le attività svolte sono state: user research, prototipazione, sviluppo e test della soluzione. 
-                  Questo tirocinio è stato poi oggetto della mia tesi di laurea.</p>
-            </div>
-
-            <div class="resume-item">
-
-              <h4>PROGRAMMATORE - TIROCINIO</h4>
-              <pre class="d-none d-md-block">05/2019 - 06/2019  |  Maccom Srl</pre>
-              <pre class="d-md-none firstPre">05/2019 - 06/2019</pre>
-              <pre class="d-md-none">Maccom Srl</pre>
-              <p>Analisi e sviluppo di un Event Manager di tipo FIFO basato su Google Cloud Functions. Migrazione dei dati
-                dell’azienda Nordpiumini dal CMS Joomla a Magento.</p>
-            </div>
-            
-          </div>
-
-          <!--Formazione-->
-          <div class="col-lg-6 spaceCV">
-
-            <h2 class="resumeTitle extraSpace">Formazione</h2>
-            <div class="resume-item">
-
-             <div class="firstLine"><h4>Interfacce e Tecnologie della Comunicazione</h4></div>
-              <pre class="d-none d-md-block">2020 - 2023  |  Università di Trento</pre>
-              <pre class="d-md-none firstPre">2020 - 2023</pre>
-              <pre class="d-md-none">Università di Trento</pre>
-              <p>Gli obiettivi del corso prevedono l’acquisizione di competenze negli aspetti tecnico-informatici, cognitivi 
-                e sociali della comunicazione, mediata dalle tecnologie dell’informazione.
-              </p>
-              <p class="previousP">
-                Mi sono laureato con una tesi dal titolo: <a href="docs/217411_Rossi_Gianluca_Elaborato_Finale.pdf" class="textYellow" target="_blank">Design per l'organizzazione delle risorse umane - Integrazione di nuovi contenuti sul portale Notion del Gruppo Barchetti</a>.
-              </p>
-              <p class="previousP">
-                Voto finale: 110 e Lode/110.
-              </p>
-            </div>
-
-            <div class="resume-item">
-
-              <h4>Tecnico informatico</h4>
-              <pre class="d-none d-md-block">2015 - 2020  |  ITT M.Buonarroti, Trento</pre>
-              <pre class="d-md-none firstPre">2015 - 2020</pre>
-              <pre class="d-md-none">ITT M.Buonarroti, Trento</pre>
-              <p>
-                Competenze acquisite: progettazione e sviluppo di applicativi software, reti informatiche, servizi Internet e mobile, database.
-              </p>
-              <p>
-                Voto finale: 100/100.
-              </p>
-            </div>
-            
-          </div>
-
-        </div>
-  
-      </div>
-
-    </div>
-
-    <!--Pulsante scarica CV-->
-    <div class="container text-center buttonSpace" data-aos="fade-up">
-
-      <div class="row rowSmall justify-content-center">
-
-        <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6 col-xxl-4">
-
-          <a href="docs/Rossi_Gianluca_CV.pdf" target="_blank">
-            <button class="btn btn-primary btnStyle w-100">Scarica il mio CV</button>
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-   
-    <!--Sezione Portfolio-->
-    <div class="section sectionSpace portfolio" id="portfolio">
-
-      <div class="container-fluid">
-
-        <!--Riga titolo + testo-->
-        <div class="row rowSmall" data-aos="fade-up">
-
-          <!--Riga titolo-->
-          <div class="col-12-fluid">
-            <h1 class="sectionTitle">Portfolio</h1>
-          </div>
-
-          <!--Riga testo-->
-          <div class="col-lg-8 col-xl-7 col-xxl-6">
-            <p class="sectionText">Durante i tre anni all’Università di Trento ho avuto la possibilità di partecipare a svariati progetti che mi hanno aiutato a sviluppare le capacità che oggi mi rendono in grado di adattarmi a qualsiasi situazione progettuale. Di seguito trovi una selezione di alcuni dei miei lavori.<p>
-          </div>
-
-        </div>
-
-        <!--Card progetti Behance-->
-        <div class="row rowSmall spaceProject" data-aos="fade-up">
-
-          <!--Progetto ViviRovereto-->
-          <div class="col-xl-4 col-sm-6">
-
-            <a href="https://www.behance.net/gallery/192096461/ViviRovereto-Redesign" target="_blank" class="card">
-
-              <img src="img/portfolio/ViviRovereto.png" class="card-img-top" alt="notion_hr">
-
-              <div class="overlay"></div>
-
-              <p class="card-title">ViviRovereto Redesign</p>
-
-            </a>
-
-          </div>
-          
-          <!--Progetto Barchetti-->
-          <div class="col-xl-4 col-sm-6">
-
-            <a href="https://www.behance.net/gallery/164627749/Notion-HR-Barchetti-Group" target="_blank" class="card">
-
-              <img src="img/portfolio/notion_hr.jpg" class="card-img-top" alt="notion_hr">
-
-              <div class="overlay"></div>
-
-              <p class="card-title">Notion HR - Gruppo Barchetti</p>
-
-            </a>
-
-          </div>
-
-          <!--Driving Behaviour Classifier-->
-          <div class="col-xl-4 col-sm-6">
-
-            <a href="https://drive.google.com/file/d/1ltVPT-rlkNdITF6lkjMo9-skeOHR2sxZ/view?usp=sharing" target="_blank" class="card">
-
-              <img src="img/portfolio/ttr_project.jpg" class="card-img-top" alt="driving_behaviour_classifier">
-
-              <div class="overlay"></div>
-
-              <p class="card-title">Driving Style Classifier</p>
-
-            </a>
-
-          </div>
-
-          <!--Brawl Stars Companion Web APP-->
-          <div class="col-xl-4 col-sm-6">
-
-            <a href="https://www.behance.net/gallery/148288831/Brawl-Stars-Companion-Web-App" target="_blank" class="card">
-
-              <img src="img/portfolio/bsc.jpg" class="card-img-top" alt="bsc">
-
-              <div class="overlay"></div>
-
-              <p class="card-title">Brawl Stars Companion Web App</p>
-
-            </a>
-
-          </div>
-
-          <!--Progetto PIG-->
-          <div class="col-xl-4 col-sm-6 d-flex">
-
-            <a href="https://www.behance.net/gallery/148415927/E-grocery-App" target="_blank" class="card">
-
-              <img src="img/portfolio/giotta.jpg" class="card-img-top" alt="giotta">
-
-              <div class="overlay"></div>
-
-              <p class="card-title">Giotta e-Grocery App</p>
-
-            </a>
-
-          </div>
-
-        </div>
-        
-      </div>
-
-    </div>
-
-    <!--Sezione Contatti-->
-    <div id="contatti"></div>
-    <div class="section sectionSpace">
-
-      <div class="container-fluid">
-
-        <!--Riga titolo + testo-->
-        <div class="row rowSmall" data-aos="fade-up">
-
-          <!--Riga titolo-->
-          <div class="col-12-fluid">
-            <h1 class="sectionTitle">Restiamo in <span class="textYellow">contatto</span></h1>
-          </div>
-
-          <!--Riga testo-->
-          <div class="col-lg-8 col-xl-7 col-xxl-6">
-            <p class="sectionText">Per collaborazioni o per qualsiasi altra informazione non esitare a contattarmi! Oltre al mio indirizzo e-mail <a href="mailto: rossi.gnlc@gmail.com" class="textYellow" target="_blank">rossi.gnlc@gmail.com</a> mi trovi anche su LinkedIn, Behance e Instagram.</p>
-          </div>
-
-        </div>
-
-        <!--Riga contatti-->
-        <div class="row rowSmall contatti" data-aos="fade-up">
-
-          <!--Gmail -->
-          <div class="col-lg-6">
-
-            <div class="d-flex align-items-center">
-
-              <a href="mailto:rossi.gnlc@gmail.com" target="_blank">
-
-                <div class="social-icon">
-  
-                  <img src="img/icons/mail.svg" alt="mail">
-  
-                </div>
-                
-              </a>
-  
-              <p class="mb-0"><b>E-mail</b><br><a class="contatti-link" href="mailto:rossi.gnlc@gmail.com" target="_blank">rossi.gnlc@gmail.com</a></p>
-
-            </div>
-
-          </div>
-
-          <!--Linkedin-->
-          <div class="col-lg-6">
-
-            <div class="d-flex align-items-center">
-
-              <a href="https://www.linkedin.com/in/gianluca-rossi-ux" target="_blank">
-
-                <div class="social-icon">
-  
-                  <img src="img/icons/linkedin.svg" alt="linkedin">
-  
-                </div>
-                
-              </a>
-  
-              <p class="mb-0"><b>LinkedIn</b><br><a class="contatti-link" href="https://www.linkedin.com/in/gianluca-rossi-ux" target="_blank">linkedin.com/in/gianluca-rossi-ux</a></p>
-
-            </div>
-
-          </div>
-
-          <!--Behance-->
-          <div class="col-lg-6">
-
-            <div class="d-flex align-items-center">
-
-              <a href="https://www.behance.net/gianlucarossi01" target="_blank">
-
-                <div class="social-icon">
-  
-                  <img src="img/icons/behance.svg" alt="behance">
-  
-                </div>
-                
-              </a>
-  
-              <p class="mb-0"><b>Behance</b><br><a class="contatti-link" href="https://www.behance.net/gianlucarossi01" target="_blank">behance.net/gianlucarossi01</a></p>
-
-            </div>
-
-          </div>
-
-          <!--Instagram-->
-          <div class="col-xxl-6 col-lg-6">
-
-            <div class="d-flex align-items-center">
-
-              <a href="https://www.instagram.com/ssiroux" target="_blank">
-
-                <div class="social-icon">
-  
-                  <img src="img/icons/instagram.svg" alt="instagram">
-  
-                </div>
-                
-              </a>
-  
-              <p class="mb-0"><b>Instagram</b><br><a class="contatti-link" href="https://www.instagram.com/ssiroux" target="_blank">@ssiroux</a></p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!--Separatore footer-->
-    <div class="section">
-
-      <div class="container-fluid">
-
-        <div class="row rowSmall rowDivider">
-
-          <div class="dividerFooter"></div>
-
-        </div>
-      
-      </div>
-
-    </div>
-   
-    
-    <!--Footer-->
-    <footer>
-
-      <div class="container-fluid mb-4">
-
-        <div class="row rowSmall">
-
-          <div class="col-6">
-
-            <div class="w-100 h-100">
-
-              <div class="row mb-3">
-
-                <div><a class="nav-footer" href="#">Home</a></div>
-
-              </div>
-
-              <div class="row mb-3">
-
-                <div><a class="nav-footer" href="#chiSono">Chi sono</a></div>
-
-              </div>
-
-              <div class="row mb-3">
-
-                <div><a class="nav-footer" href="#portfolio">Portfolio</a></div>
-
-              </div>
-
-              <div class="row">
-
-                <div><a class="nav-footer" href="#contatti">Contatti</a></div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-6">
-
-            <div class="flex-container">
-
-              <div class="row d-flex justify-content-end contatti-footer">
-
-                <!--Gmail-->
-                <div class="col-3 d-flex justify-content-end mb-2">
-                  
-                  <a href="mailto:rossi.gnlc@gmail.com" target="_blank">
-
-                    <div class="social-icon">
-      
-                      <img src="img/icons/mail.svg" alt="mail">
-      
-                    </div>
-                    
-                  </a>
-
-                </div>
-
-                <!--Linkedin-->
-                <div class="col-3 d-flex justify-content-end mb-2">
-                  
-                  <a href="https://www.linkedin.com/in/gianluca-rossi-ux" target="_blank">
-
-                    <div class="social-icon">
-      
-                      <img src="img/icons/linkedin.svg" alt="mail">
-      
-                    </div>
-                    
-                  </a>
-
-                </div>
-
-                <!--Behance-->
-                <div class="col-3 d-flex justify-content-end">
-                  
-                  <a href="https://www.behance.net/gianlucarossi01" target="_blank">
-
-                    <div class="social-icon">
-      
-                      <img src="img/icons/behance.svg" alt="mail">
-      
-                    </div>
-                    
-                  </a>
-
-                </div>
-
-                <!--Instagram-->
-                <div class="col-3 d-flex justify-content-end">
-                  
-                  <a href="https://www.instagram.com/ssiroux" target="_blank">
-
-                    <div class="social-icon">
-      
-                      <img src="img/icons/instagram.svg" alt="mail">
-      
-                    </div>
-                    
-                  </a>
-
-                </div>
-
-              </div>
-
-              <div class="flex-grow-1 d-flex justify-content-end align-items-end">
-
-                <div class="row">
-
-                  <div class="col-12"> 
-
-                    <small>Copyright &copy; <span id="anno"></span> Gianluca Rossi</small>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-      
-    </footer>
-
-    <!--jQuery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!--Link JS-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    <!--Script per animazioni AOS-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!--Il mio file JS-->
+    <!-- Link al file script.js -->
     <script src="script.js"></script>
 
   </body>
-
 </html>
