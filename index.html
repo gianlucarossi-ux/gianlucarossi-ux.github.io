@@ -51,45 +51,273 @@
       @font-face {
         font-family: 'Nohemi';
         src: url('fonts/Nohemi-VF.ttf') format('truetype');
-        font-weight: normal;
+        font-weight: 400;
         font-style: normal;
       }
     </style>
   </head>
 
-  <body class="bg-background text-text font-sans mx-[1.5rem] xs:mx-[1.5rem] sm:mx-[1.5rem] md:mx-[1.5rem] lg:mx-[5rem] xl:mx-[5rem] 2xl:mx-[5rem] 3xl:mx-[8rem] 4xl:mx-[8rem] 5xl:mx-[9rem]">
-    <section id="hero" class="flex flex-col py-[5rem] xs:py-[5rem] sm:py-[8rem] md:py-[8rem] lg:py-[10rem] xl:py-[12rem] 2xl:py-[12rem] 3xl:py-[10rem] 4xl:py-[6.5rem] 5xl:py-[8rem]">
-      <!-- Immagine con animazione AOS: fade-up -->
+  <body class="bg-background text-text font-sans ">
+    
+    <!-- HERO -->
+    <section id="hero" class="flex flex-col py-[6rem] xs:py-[6rem] sm:py-[6rem] md:py-[6rem] lg:py-[6rem] xl:py-[6rem] 2xl:py-[6rem] 3xl:py-[6rem] 4xl:py-[6rem] 5xl:py-[6rem] mx-[1.5rem] xs:mx-[1.5rem] sm:mx-[1.5rem] md:mx-[1.5rem] lg:mx-[5rem] xl:mx-[5rem] 2xl:mx-[5rem] 3xl:mx-[8rem] 4xl:mx-[8rem] 5xl:mx-[9rem]">
+      <!-- Immagine profilo-->
       <div class="mb-[1.5rem] xs:mb-[1.5rem] sm:mb-[2rem] md:mb-[2.5rem] lg:mb-[2.5rem] xl:mb-[2.5rem] 2xl:mb-[3.5rem] 3xl:mb-[3.5rem] 4xl:mb-[2rem] 5xl:mb-[4rem]" data-aos="fade-up">
         <img src="img/profile.webp" alt="Profile Image" class="w-[4rem] h-[4rem] xs:w-[4rem] xs:h-[4rem] sm:w-[5rem] sm:h-[5rem] md:w-[6rem] md:h-[6rem] lg:w-[8rem] lg:h-[8rem] xl:w-[8rem] xl:h-[8rem] 2xl:w-[9rem] 2xl:h-[9rem] 3xl:w-[8rem] 3xl:h-[8rem] 4xl:w-[8.5rem] 4xl:h-[8.5rem] 5xl:w-[10rem] 5xl:h-[10rem]" />
       </div>
     
-      <!-- Titolo con animazione AOS -->
+      <!-- Titolo -->
       <div class="mb-[2rem] xs:mb-[2rem] sm:mb-[2.5rem] md:mb-[3rem] lg:mb-[3rem] xl:mb-[3rem] 2xl:mb-[4rem] 3xl:mb-[4rem] 4xl:mb-[3rem] 5xl:mb-[5rem]" data-aos="fade-up">
         <h1 class="font-nohemi text-[2.5rem] leading-[2.875rem] xs:text-[2.5rem] xs:leading-[2.875rem] sm:text-[3.25rem] sm:leading-[3.625rem] md:text-[4rem] md:leading-[4.375rem] lg:text-[6rem] lg:leading-[6.375rem] xl:text-[6rem] xl:leading-[6.375rem] 2xl:text-[8rem] 2xl:leading-[8.375rem] 3xl:text-[5.5rem] 3xl:leading-[5.875rem] 4xl:text-[6.5rem] 4xl:leading-[7rem] 5xl:text-[8rem] 5xl:leading-[8.375rem]">
-          Hi! I'm Gianluca, <br>a passionate UX Designer based in Italy
+          Hi! I'm Gianluca, <br>a passionate UX <br class="hidden 5xl:inline"> Designer based in Italy
         </h1>
       </div>
       
-      <!-- CTA con animazione AOS -->
+      <!-- Cta -->
       <div id="cta-wrapper" class="flex flex-col md:flex-row md:gap-x-[0.5rem] gap-y-[1rem]" data-aos="fade-up" data-aos-delay="200">
         <!-- Pulsante LET'S TALK -->
-        <a href="https://www.linkedin.com/in/gianluca-rossi-ux/" target="_blank" class="w-full md:w-auto">
-          <button class="w-full md:min-w-[11.625rem] font-nohemi font-semibold uppercase text-[1rem] leading-normal bg-[#A4F4CF] text-[#002C22] rounded-full py-[0.5rem] px-[1rem] whitespace-nowrap box-border transition-colors duration-300 hover:bg-[#D0FAE5] hover:text-[#002C22]">
+        <a href="#contacts" class="w-full md:w-auto">
+          <button class="w-full md:min-w-[11.625rem] font-nohemi font-semibold uppercase text-[1rem] leading-[1.375rem] 2xl:text-[1.125rem] 2xl:leading-[1.5rem] 3xl:text-[1.125rem] 3xl:leading-[1.5rem] 4xl:text-[1.125rem] 4xl:leading-[1.5rem] 5xl:text-[1.125rem] 5xl:leading-[1.5rem] bg-[#A4F4CF] text-[#002C22] rounded-full py-[0.5rem] px-[1rem] whitespace-nowrap box-border transition-colors duration-300 hover:bg-[#D0FAE5] hover:text-[#002C22]">
             LET'S TALK
           </button>
         </a>
       
         <!-- Pulsante OPEN RESUME -->
         <a href="docs/Rossi_Gianluca_CV.pdf" target="_blank" class="w-full md:w-auto">
-          <button class="w-full md:min-w-[11.625rem] font-nohemi font-semibold uppercase text-[1rem] leading-normal border-2 border-[#A4F4CF] text-[#A4F4CF] rounded-full py-[calc(0.5rem-1px)] px-[calc(1rem-1px)] whitespace-nowrap box-border transition-colors duration-300 hover:bg-[#A4F4CF] hover:text-[#002C22]">
+          <button class="w-full md:min-w-[11.625rem] font-nohemi font-semibold uppercase text-[1rem] leading-[1.375rem] 2xl:text-[1.125rem] 2xl:leading-[1.5rem] 3xl:text-[1.125rem] 3xl:leading-[1.5rem] 4xl:text-[1.125rem] 4xl:leading-[1.5rem] 5xl:text-[1.125rem] 5xl:leading-[1.5rem] border-2 border-[#A4F4CF] text-[#A4F4CF] rounded-full py-[calc(0.5rem-1px)] px-[calc(1rem-1px)] whitespace-nowrap box-border transition-colors duration-300 hover:bg-[#A4F4CF] hover:text-[#002C22]">
             OPEN RESUME
           </button>
         </a>
-      </div>            
+      </div>                
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="flex flex-col items-start py-[6rem] sm:py-[6.5rem] md:py-[8rem] lg:py-[10rem] xl:py-[10rem] 2xl:py-[11.5rem] 3xl:py-[8rem] 4xl:py-[10rem] 5xl:py-[10rem] gap-[1rem] lg:gap-[1.5rem] mx-[1.5rem] xs:mx-[1.5rem] sm:mx-[1.5rem] md:mx-[1.5rem] lg:mx-[5rem] xl:mx-[5rem] 2xl:mx-[5rem] 3xl:mx-[8rem] 4xl:mx-[8rem] 5xl:mx-[9rem]" data-aos="fade-up">
+      <p class="w-full 5xl:w-[75%] text-[1rem] leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.875rem] xl:text-[1.5rem] xl:leading-[1.875rem] 2xl:text-[1.5rem] 2xl:leading-[1.875rem] 3xl:text-[2rem] 3xl:leading-[2.375rem] 4xl:text-[2rem] 4xl:leading-[2.375rem] 5xl:text-[2rem] 5xl:leading-[2.375rem] font-normal">
+        I've always been passionate about technology, and during my studies, I specialized in User Experience Design.
+      </p>
+      <p class="w-full 5xl:w-[75%] text-[1rem] leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.875rem] xl:text-[1.5rem] xl:leading-[1.875rem] 2xl:text-[1.5rem] 2xl:leading-[1.875rem] 3xl:text-[2rem] 3xl:leading-[2.375rem] 4xl:text-[2rem] 4xl:leading-[2.375rem] 5xl:text-[2rem] 5xl:leading-[2.375rem] font-normal">
+        I’m currently working as a UX Designer at Oniverse, where, I focus on behavioral analysis, A/B testing and information architecture to improve the user journey and enhance decision-making through data.
+      </p>
+      <p class="w-full 5xl:w-[75%] text-[1rem] leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.875rem] xl:text-[1.5rem] xl:leading-[1.875rem] 2xl:text-[1.5rem] 2xl:leading-[1.875rem] 3xl:text-[2rem] 3xl:leading-[2.375rem] 4xl:text-[2rem] 4xl:leading-[2.375rem] 5xl:text-[2rem] 5xl:leading-[2.375rem] font-normal">
+        I'm also passionate about podcasts and wrist watches.
+      </p>
     </section>
     
-    <!--<section id="contacts" class="flex flex-col py-[5rem] xs:py-[5rem] sm:py-[8rem] md:py-[8rem] lg:py-[10rem] xl:py-[12rem] 2xl:py-[12rem] 3xl:py-[10rem] 4xl:py-[6.5rem] 5xl:py-[8rem]"></section>-->         
+    <!-- WORKS -->
+    <section id="works" class="py-[6rem] sm:py-[6.5rem] md:py-[8rem] lg:py-[10rem] 2xl:py-[11.5rem] 3xl:py-[8rem] 4xl:py-[10rem] 5xl:py-[10rem] mx-[1.5rem] xs:mx-[1.5rem] sm:mx-[1.5rem] md:mx-[1.5rem] lg:mx-[5rem] xl:mx-[5rem] 2xl:mx-[5rem] 3xl:mx-[8rem] 4xl:mx-[8rem] 5xl:mx-[9rem]" data-aos="fade-up">
+      <!-- Titolo -->
+      <h2 class="text-[1.75rem] leading-[2.125rem] sm:text-[1.75rem] sm:leading-[2.125rem] md:text-[2.125rem] md:leading-[2.5rem] lg:text-[3.5rem] lg:leading-[3.875rem] xl:text-[3.5rem] xl:leading-[3.875rem] 2xl:text-[3.5rem] 2xl:leading-[3.875rem] 3xl:text-[3.5rem] 3xl:leading-[3.875rem] 4xl:text-[3.5rem] 4xl:leading-[3.875rem] 5xl:text-[3.5rem] 5xl:leading-[3.875rem] font-['Nohemi'] font-semibold text-[#A4F4CF] mb-[1.5rem] lg:mb-[2rem] 3xl:mb-[2.5rem]">
+        01 - Selected Works
+      </h2>
+    
+      <!-- Linea divisoria -->
+      <div class="w-full h-px rounded-full" style="background-color: #A4F4CF; height: 0.015625rem;"></div>
+    
+      <!-- ViviRovereto -->
+      <a href="https://www.behance.net/gallery/192096461/ViviRovereto-Redesign" target="_blank" rel="noopener noreferrer" class="block py-[1rem] sm:py-[1rem] md:py-[1rem] lg:py-[1.5rem] 2xl:py-[1.5rem] 3xl:py-[2rem] 4xl:py-[2rem] 5xl:py-[2rem] group">
+        <div class="flex flex-col 3xl:flex-row 3xl:items-center 3xl:justify-between">
+          <!-- Testi -->
+          <div class="flex flex-col gap-[0.5rem]">
+            <h3 class="text-[1.5rem] leading-[1.875rem] sm:text-[1.5rem] sm:leading-[1.875rem] md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3rem] lg:leading-[3.375rem] font-['Nohemi'] font-medium text-[#A4F4CF]">
+              ViviRovereto Redesign
+            </h3>
+            <p class="text-[0.75rem] leading-[1.125rem] md:text-[0.875rem] md:leading-[1.25rem] lg:text-[1.125rem] lg:leading-[1.5rem] text-[#A4F4CF]">
+              User Research, Design System, Figma
+            </p>
+          </div>
+        
+          <!-- Freccia -->
+          <div class="mt-[1rem] lg:mt-[1.5rem] 3xl:mt-0 3xl:ml-[10rem]">
+            <div class="px-[0.75rem] py-[0.5rem] rounded-full bg-[#A4F4CF] inline-block">
+              <img src="img/arrow.svg" alt="Arrow" class="w-6 h-2 lg:w-8 lg:h-4" />
+            </div>
+          </div>
+        </div>        
+      </a>
+    
+      <!-- Linea divisoria -->
+      <div class="w-full h-px rounded-full" style="background-color: #A4F4CF; height: 0.015625rem;"></div>
+
+      <!-- Notion Barchetti -->
+      <a href="https://www.behance.net/gallery/164627749/Notion-HR-Barchetti-Group" target="_blank" rel="noopener noreferrer" class="block py-[1rem] sm:py-[1rem] md:py-[1rem] lg:py-[1.5rem] 2xl:py-[1.5rem] 3xl:py-[2rem] 4xl:py-[2rem] 5xl:py-[2rem] group">
+        <div class="flex flex-col 3xl:flex-row 3xl:items-center 3xl:justify-between">
+          <!-- Testi -->
+          <div class="flex flex-col gap-[0.5rem]">
+            <h3 class="text-[1.5rem] leading-[1.875rem] sm:text-[1.5rem] sm:leading-[1.875rem] md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3rem] lg:leading-[3.375rem] font-['Nohemi'] font-medium text-[#A4F4CF]">
+              Notion HR Barchetti Group
+            </h3>
+            <p class="text-[0.75rem] leading-[1.125rem] md:text-[0.875rem] md:leading-[1.25rem] lg:text-[1.125rem] lg:leading-[1.5rem] text-[#A4F4CF]">
+              User Research, User Testing, Design Thinking
+            </p>
+          </div>
+        
+          <!-- Freccia -->
+          <div class="mt-[1rem] lg:mt-[1.5rem] 3xl:mt-0 3xl:ml-[10rem]">
+            <div class="px-[0.75rem] py-[0.5rem] rounded-full bg-[#A4F4CF] inline-block">
+              <img src="img/arrow.svg" alt="Arrow" class="w-6 h-2 lg:w-8 lg:h-4" />
+            </div>
+          </div>
+        </div>        
+      </a>
+
+      <!-- Linea divisoria -->
+      <div class="w-full h-px rounded-full" style="background-color: #A4F4CF; height: 0.015625rem;"></div>
+
+      <!-- Driving style classifier -->
+      <a href="https://drive.google.com/file/d/1ltVPT-rlkNdITF6lkjMo9-skeOHR2sxZ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="block py-[1rem] sm:py-[1rem] md:py-[1rem] lg:py-[1.5rem] 2xl:py-[1.5rem] 3xl:py-[2rem] 4xl:py-[2rem] 5xl:py-[2rem] group">
+        <div class="flex flex-col 3xl:flex-row 3xl:items-center 3xl:justify-between">
+          <!-- Testi -->
+          <div class="flex flex-col gap-[0.5rem]">
+            <h3 class="text-[1.5rem] leading-[1.875rem] sm:text-[1.5rem] sm:leading-[1.875rem] md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3rem] lg:leading-[3.375rem] font-['Nohemi'] font-medium text-[#A4F4CF]">
+              Driving Style Classifier
+            </h3>
+            <p class="text-[0.75rem] leading-[1.125rem] md:text-[0.875rem] md:leading-[1.25rem] lg:text-[1.125rem] lg:leading-[1.5rem] text-[#A4F4CF]">
+              AI, Service Design, Classification Algorithm
+            </p>
+          </div>
+        
+          <!-- Freccia -->
+          <div class="mt-[1rem] lg:mt-[1.5rem] 3xl:mt-0 3xl:ml-[10rem]">
+            <div class="px-[0.75rem] py-[0.5rem] rounded-full bg-[#A4F4CF] inline-block">
+              <img src="img/arrow.svg" alt="Arrow" class="w-6 h-2 lg:w-8 lg:h-4" />
+            </div>
+          </div>
+        </div>        
+      </a>
+
+      <!-- Linea divisoria -->
+      <div class="w-full h-px rounded-full" style="background-color: #A4F4CF; height: 0.015625rem;"></div>
+
+      <!-- Brawlstars Companion App -->
+      <a href="https://www.behance.net/gallery/148288831/Brawl-Stars-Companion-Web-App" target="_blank" rel="noopener noreferrer" class="block py-[1rem] sm:py-[1rem] md:py-[1rem] lg:py-[1.5rem] 2xl:py-[1.5rem] 3xl:py-[2rem] 4xl:py-[2rem] 5xl:py-[2rem] group">
+        <div class="flex flex-col 3xl:flex-row 3xl:items-center 3xl:justify-between">
+          <!-- Testi -->
+          <div class="flex flex-col gap-[0.5rem]">
+            <h3 class="text-[1.5rem] leading-[1.875rem] sm:text-[1.5rem] sm:leading-[1.875rem] md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3rem] lg:leading-[3.375rem] font-['Nohemi'] font-medium text-[#A4F4CF]">
+              Brawlstars Companion Web App
+            </h3>
+            <p class="text-[0.75rem] leading-[1.125rem] md:text-[0.875rem] md:leading-[1.25rem] lg:text-[1.125rem] lg:leading-[1.5rem] text-[#A4F4CF]">
+              Vue.js, Material Design, API
+            </p>
+          </div>
+        
+          <!-- Freccia -->
+          <div class="mt-[1rem] lg:mt-[1.5rem] 3xl:mt-0 3xl:ml-[10rem]">
+            <div class="px-[0.75rem] py-[0.5rem] rounded-full bg-[#A4F4CF] inline-block">
+              <img src="img/arrow.svg" alt="Arrow" class="w-6 h-2 lg:w-8 lg:h-4" />
+            </div>
+          </div>
+        </div>        
+      </a>
+
+      <!-- Linea divisoria -->
+      <div class="w-full h-px rounded-full" style="background-color: #A4F4CF; height: 0.015625rem;"></div>
+
+      <!-- Giotta Supermercati -->
+      <a href="https://www.behance.net/gallery/148415927/E-grocery-App" target="_blank" rel="noopener noreferrer" class="block py-[1rem] sm:py-[1rem] md:py-[1rem] lg:py-[1.5rem] 2xl:py-[1.5rem] 3xl:py-[2rem] 4xl:py-[2rem] 5xl:py-[2rem] group">
+        <div class="flex flex-col 3xl:flex-row 3xl:items-center 3xl:justify-between">
+          <!-- Testi -->
+          <div class="flex flex-col gap-[0.5rem]">
+            <h3 class="text-[1.5rem] leading-[1.875rem] sm:text-[1.5rem] sm:leading-[1.875rem] md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3rem] lg:leading-[3.375rem] font-['Nohemi'] font-medium text-[#A4F4CF]">
+              Giotta e-Grocery App
+            </h3>
+            <p class="text-[0.75rem] leading-[1.125rem] md:text-[0.875rem] md:leading-[1.25rem] lg:text-[1.125rem] lg:leading-[1.5rem] text-[#A4F4CF]">
+              Design System, Design Thinking, Prototyping
+            </p>
+          </div>
+        
+          <!-- Freccia -->
+          <div class="mt-[1rem] lg:mt-[1.5rem] 3xl:mt-0 3xl:ml-[10rem]">
+            <div class="px-[0.75rem] py-[0.5rem] rounded-full bg-[#A4F4CF] inline-block">
+              <img src="img/arrow.svg" alt="Arrow" class="w-6 h-2 lg:w-8 lg:h-4" />
+            </div>
+          </div>
+        </div>        
+      </a>
+
+      <!-- Linea divisoria -->
+      <div class="w-full h-px rounded-full" style="background-color: #A4F4CF; height: 0.015625rem;"></div>
+
+    </section>       
+
+    <!-- CONTACTS -->
+    <section id="contacts" class="py-[6rem] sm:py-[6.5rem] md:py-[8rem] lg:py-[10rem] 2xl:py-[11.5rem] 3xl:py-[8rem] 4xl:py-[10rem] 5xl:py-[10rem] mx-[1.5rem] xs:mx-[1.5rem] sm:mx-[1.5rem] md:mx-[1.5rem] lg:mx-[5rem] xl:mx-[5rem] 2xl:mx-[5rem] 3xl:mx-[8rem] 4xl:mx-[8rem] 5xl:mx-[9rem]" data-aos="fade-up">
+      <!-- Titolo -->
+      <h2 class="text-[1.75rem] leading-[2.125rem] sm:text-[1.75rem] sm:leading-[2.125rem] md:text-[2.125rem] md:leading-[2.5rem] lg:text-[3.5rem] lg:leading-[3.875rem] xl:text-[3.5rem] xl:leading-[3.875rem] 2xl:text-[3.5rem] 2xl:leading-[3.875rem] 3xl:text-[3.5rem] 3xl:leading-[3.875rem] 4xl:text-[3.5rem] 4xl:leading-[3.875rem] 5xl:text-[3.5rem] 5xl:leading-[3.875rem] font-['Nohemi'] font-semibold text-[#A4F4CF] mb-[1.5rem] lg:mb-[2rem] 3xl:mb-[2.5rem]">
+        02 - Contacts
+      </h2>
+    
+      <!-- Descrizione -->
+      <p class="w-full 5xl:w-[75%] text-[1rem] leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.875rem] xl:text-[1.5rem] xl:leading-[1.875rem] 2xl:text-[1.5rem] 2xl:leading-[1.875rem] 3xl:text-[2rem] 3xl:leading-[2.375rem] 4xl:text-[2rem] 4xl:leading-[2.375rem] 5xl:text-[2rem] 5xl:leading-[2.375rem] font-normal mb-[3rem] lg:mb-[4rem] 3xl:mb-[5rem] text-[#A4F4CF]">
+        I truly believe that sharing ideas and perspectives is one of the best ways to grow. So if you'd like to talk about a project — or just have a friendly chat — feel free to reach out using the contacts below :)
+      </p>
+    
+      <!-- Linea divisoria -->
+      <div class="w-full h-px rounded-full" style="background-color: #A4F4CF; height: 0.015625rem;"></div>
+    
+      <!-- Blocco Contatto -->
+      <a href="mailto:rossi.gnlc@gmail.com" target="_blank" class="block py-[1rem] sm:py-[1rem] md:py-[1rem] lg:py-[1.5rem] xl:py-[1.5rem] 2xl:py-[1.5rem] 3xl:py-[2rem] 4xl:py-[2rem] 5xl:py-[2rem]">
+        <div class="flex items-center justify-between gap-[4rem] lg:gap-[6rem] 3xl:gap-[10rem]">
+          <h3 class="text-[1.5rem] leading-[1.875rem] sm:text-[1.5rem] sm:leading-[1.875rem] md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3rem] lg:leading-[3.375rem] font-['Nohemi'] font-medium text-[#A4F4CF]">
+            E-mail
+          </h3>
+          <div class="px-[0.75rem] py-[0.5rem] rounded-full bg-[#A4F4CF] inline-block">
+            <img src="img/arrow.svg" alt="Arrow" class="w-6 h-2 lg:w-8 lg:h-4" />
+          </div>
+        </div>
+      </a>
+    
+      <!-- Seconda linea divisoria -->
+      <div class="w-full h-px rounded-full" style="background-color: #A4F4CF; height: 0.015625rem;"></div>
+
+      <!-- Blocco Contatto -->
+      <a href="https://www.linkedin.com/in/gianluca-rossi-ux/" target="_blank" class="block py-[1rem] sm:py-[1rem] md:py-[1rem] lg:py-[1.5rem] xl:py-[1.5rem] 2xl:py-[1.5rem] 3xl:py-[2rem] 4xl:py-[2rem] 5xl:py-[2rem]">
+        <div class="flex items-center justify-between gap-[4rem] lg:gap-[6rem] 3xl:gap-[10rem]">
+          <h3 class="text-[1.5rem] leading-[1.875rem] sm:text-[1.5rem] sm:leading-[1.875rem] md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3rem] lg:leading-[3.375rem] font-['Nohemi'] font-medium text-[#A4F4CF]">
+            LinkedIn
+          </h3>
+          <div class="px-[0.75rem] py-[0.5rem] rounded-full bg-[#A4F4CF] inline-block">
+            <img src="img/arrow.svg" alt="Arrow" class="w-6 h-2 lg:w-8 lg:h-4" />
+          </div>
+        </div>
+      </a>
+    
+      <!-- Terza linea divisoria -->
+      <div class="w-full h-px rounded-full" style="background-color: #A4F4CF; height: 0.015625rem;"></div>
+
+      <!-- Blocco Contatto -->
+      <a href="https://www.behance.net/gianlucarossi01" target="_blank" class="block py-[1rem] sm:py-[1rem] md:py-[1rem] lg:py-[1.5rem] xl:py-[1.5rem] 2xl:py-[1.5rem] 3xl:py-[2rem] 4xl:py-[2rem] 5xl:py-[2rem]">
+        <div class="flex items-center justify-between gap-[4rem] lg:gap-[6rem] 3xl:gap-[10rem]">
+          <h3 class="text-[1.5rem] leading-[1.875rem] sm:text-[1.5rem] sm:leading-[1.875rem] md:text-[1.75rem] md:leading-[2.125rem] lg:text-[3rem] lg:leading-[3.375rem] font-['Nohemi'] font-medium text-[#A4F4CF]">
+            Behance
+          </h3>
+          <div class="px-[0.75rem] py-[0.5rem] rounded-full bg-[#A4F4CF] inline-block">
+            <img src="img/arrow.svg" alt="Arrow" class="w-6 h-2 lg:w-8 lg:h-4" />
+          </div>
+        </div>
+      </a>
+    
+      <!-- Quarta linea divisoria -->
+      <div class="w-full h-px rounded-full" style="background-color: #A4F4CF; height: 0.015625rem;"></div>
+
+    </section> 
+    
+    <!-- FOOTER -->
+    <footer class="pt-[6rem] sm:pt-[6.5rem] md:pt-[8rem] lg:pt-[10rem] xl:pt-[10rem] 2xl:pt-[11.5rem] 3xl:pt-[8rem] 4xl:pt-[10rem] 5xl:pt-[10rem]">
+      <!-- Linea divisoria -->
+      <div class="w-full h-px rounded-full" style="background-color: #A4F4CF; height: 0.015625rem;"></div>
+    
+      <!-- Contenuto -->
+      <div class="mt-[1rem] mb-[1.5rem] mx-[1.5rem] lg:mt-[1.5rem] lg:mb-[2rem] lg:mx-[5rem] 3xl:mx-[8rem] 5xl:mx-[9rem] flex flex-col gap-[0.5rem]">
+        <p class="text-[#A4F4CF] font-['Poppins'] text-[0.75rem] leading-[1.125rem] md:text-[0.875rem] md:leading-[1.25rem]">
+          Made with &lt;3 in Italy
+        </p>
+        <p class="text-[#A4F4CF] font-['Poppins'] text-[0.75rem] leading-[1.125rem] md:text-[0.875rem] md:leading-[1.25rem]">
+          Copyright © <span id="current-year"></span> Gianluca Rossi
+        </p>
+      </div>
+    </footer>    
 
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
